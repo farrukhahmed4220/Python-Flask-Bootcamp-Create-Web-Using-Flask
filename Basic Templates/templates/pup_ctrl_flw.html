@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>{{ mylist }}</h1>
+
+	<ul>
+		{% for item in puppies%}
+		<li>{{item}}</li>
+		{% endfor %}
+
+	</ul>
+
+	{% if 'Rufus' in puppies %}
+	<p>Hey Rufus ! We found you</p>
+	{% else %}
+	<p>Hmm.. Rufus is not here in the list</p>
+	{% endif %}
+
+</body>
+</html>
