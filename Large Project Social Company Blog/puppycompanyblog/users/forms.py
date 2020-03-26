@@ -33,7 +33,7 @@ class RegistrationForm(FlaskForm):
 
 
 
-class UpdateUerForm(FlaskForm):
+class UpdateUserForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(),Email()])
     username = StringField('Username', validators=[DataRequired(),Email()])
     picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png'])])
